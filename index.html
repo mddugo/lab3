@@ -108,7 +108,7 @@
                 style: style,
                 onEachFeature: onEachFeature
             }).bindTooltip(function (layer){
-                return '<p style="color:red">' + layer.feature.properties.black.toString() + ' people who identify as black </p>';
+                return '<p style="color:red">' + layer.feature.properties.black.toString() + ' people who identify as African American </p>';
             }).addTo(map);
 
          var legend = L.control({position: 'bottomright'}); // Try the other three corners if you like.
@@ -118,7 +118,7 @@
                var div = L.DomUtil.create('div', 'legend'),
                    grades = [0, 713, 1858, 2982, 4456]; // The break values to define the intervals of population, note we begin from 0 here
 
-               div.innerHTML = '<b>Black Population Density in Chicago <br> 2014 <br></b>'; // The legend title (HTML-based), in this case it's Population Density 2011
+               div.innerHTML = '<b>African American Population Density in Chicago <br> 2014 <br></b>'; // The legend title (HTML-based), in this case it's Population Density 2011
 
                // Loop through our the classes and generate a label with a color box for each interval.
                // If you are creating a choropleth map, you DO NOT need to change lines below.
